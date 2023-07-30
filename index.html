@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <!--CARD-->
+            <div class="wCard">
+                <!--CABEÇALHO DO CARD-->
+                <div class="header">
+                    <h1>Weather App</h1>
+                    <div>
+                        <p>Find out the weather in your city</p>
+                        <input type="text" name="search" id="search" placeholder="Write your city name..."></input>
+                        <button id="btn" class="btn">Search</button>
+                    </div>
+                    <label for="search" id="hint"></label>
+                    <div class="bar">
+                        <div id="load" class=""></div>
+                    </div>
+                </div>
+                <!--CONTEUDO DO CLIMA-->
+                <div id="info" class="info">
+                    <div id="content" class="content">
+                    <div class="cidade">
+                        <span>
+                            <h2 id="cidadeNome"></h2>
+                            <img id="cidadeFlag" class="flag" alt="flag">
+                        </span>
+                    </div>
+                    <div class="temp">
+                        <p id="temperatura"></p>
+                    </div>
+                    <div class="clima">
+                        <span>
+                            <p id="clima"></p> 
+                        </span>
+                        <span>
+                            <img id="climaIcon" alt="clima"> 
+                        </span>
+                    </div>
+                    </div>
+                    <div class="subContent">
+                        <span class="extra umidade"> <img class="icon" src="/imgs/umidade.svg" alt="umidade"><p id="umidade"></p></span>
+                        <span class="extra vento"> <img class="icon" src="/imgs/vento.svg" alt="vento"> <p id="vento"></p></span>
+                        <span class="extra pressao"> <img class="icon" src="/imgs/atmospheric.svg" alt="pressao"> <p id="pressao"></p></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
+    </footer>
+    <script src="./JS/script.js" type="module"></script>
+</body>
+</html>
