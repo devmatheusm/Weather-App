@@ -7,10 +7,10 @@
 1. clonar o repositorio
 
 ```console
-# comando para clonar
+#comando para clonar
 $git clone https://github.com/devmatheusm/weather-app.git
 
-# ir ao diretorio do repositorio
+#ir ao diretorio do repositorio
 $cd weather-webapp
 ```
 
@@ -29,10 +29,10 @@ $cd weather-webapp
 1. clone the repository
 
 ```console
-# command to clone
+#command to clone
 $git clone https://github.com/devmatheusm/weather-app.git
 
-# go to repository directory
+#go to repository directory
 $cd weather-app
 ```
 
