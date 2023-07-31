@@ -17,7 +17,7 @@
                     <h1>Weather App</h1>
                     <div>
                         <p>Find out the weather in your city</p>
-                        <input type="text" name="search" id="search" placeholder="Write your city name..."></input>
+                        <input type="text" name="search" id="search" autocomplete="off" placeholder="Write your city name..."></input>
                         <button id="btn" class="btn">Search</button>
                     </div>
                     <label for="search" id="hint"></label>
@@ -29,7 +29,7 @@
                 <div id="info" class="info">
                     <div id="content" class="content">
                     <div class="cidade">
-                        <span>
+                        <span class="cidadeFlag">
                             <h2 id="cidadeNome"></h2>
                             <img id="cidadeFlag" class="flag" alt="flag">
                         </span>
@@ -42,7 +42,7 @@
                             <p id="clima"></p> 
                         </span>
                         <span>
-                            <img id="climaIcon" alt="clima"> 
+                            <img id="climaIcon" alt="clima">
                         </span>
                     </div>
                     </div>

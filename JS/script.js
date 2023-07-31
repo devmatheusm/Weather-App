@@ -23,11 +23,7 @@ const loading = document.getElementById('load');
 informacao.classList.add('none');
 content.forEach(cont => cont.classList.add('hide')) 
 
-//VERIFICAÇÃO DA CHAVE DA API
-if(KEY == "YOUR_API_KEY_WITH_QUOTES"){
-    hint.classList.remove('none');
-    hint.innerText = "Chave da API invalida";
-}
+
 
 //PEGA AS INFORMAÇÕES DA API E CONVERTE PRO FORMATO JSON
 const getData = async (inputCidade) => {
@@ -48,8 +44,14 @@ const sortData = async (inputCidade) =>{
         loading.classList.remove('loading');
         throw hint.innerText = "Cidade não encontrada"
     }
-    
 
+    //VERIFICAÇÃO DA CHAVE DA API
+    if(data.cod == "401"){
+        hint.classList.remove('none');
+        loading.classList.remove('loading');
+        hint.innerText = "Chave da API invalida";
+    }
+    
     const API_ICON_WEATHER = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const API_FLAG = `https://www.countryflagicons.com/FLAT/32/${data.sys.country}.png`
 
